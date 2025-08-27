@@ -55,6 +55,11 @@ export default function RetirementInvitation() {
     text: ''
   });
 
+  // Establecer título de la página
+  useEffect(() => {
+    document.title = 'Jubilación Leticia Salinas - letysalinas.site';
+  }, []);
+
   // Countdown timer para el 5 de octubre 2025 a las 12:00 PM
   useEffect(() => {
     const targetDate = new Date('2025-10-05T12:00:00').getTime();
@@ -236,7 +241,7 @@ export default function RetirementInvitation() {
       </nav>
 
       {/* Hero Section */}
-      <section id="presentacion" className="pt-20 px-4 text-center">
+      <section id="presentacion" className="pt-30 px-4 text-center">
         <div className="max-w-md mx-auto">
           <div className="mb-3">
             <GraduationCap className="w-12 h-12 text-rose-600 mx-auto" />
