@@ -27,8 +27,8 @@ const SwalAlert = ({ isOpen, type, title, text, onConfirm }) => {
           onClick={onConfirm}
           className={`px-6 py-2 rounded-lg font-medium ${
             type === 'success' 
-              ? 'bg-green-600 hover:bg-green-700 text-white' 
-              : 'bg-orange-600 hover:bg-orange-700 text-white'
+              ? 'bg-green-600 hover:bg-green-700 text-black' 
+              : 'bg-orange-600 hover:bg-orange-700 text-black'
           } transition-colors`}
         >
           OK
@@ -78,11 +78,17 @@ export default function RetirementInvitation() {
 
   // Gallery auto-scroll
   const photos = [
-    'https://images.unsplash.com/photo-1577896851231-70ef18881754?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=300&h=200&fit=crop'
+    'img/photohero.JPG',
+    'img/lety-fiesta.png',
+    'img/lety-fiesta-1.png',
+    'img/lety-fiesta-2.png',
+    'img/lety-fiesta-3.png',
+    'img/lety-fiesta-4.png',
+    'img/lety-fiesta-5.png',
+    'img/lety-fiesta-6.png',
+    'img/lety-fiesta-7.png',
+    'img/lety-fiesta-8.png',
+    'img/lety-fiesta-9.png'
   ];
 
   useEffect(() => {
@@ -245,7 +251,7 @@ export default function RetirementInvitation() {
           {/* Photo Placeholder */}
           <div className="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-rose-200 shadow-lg">
             <img 
-              src="/api/placeholder/200/200" 
+              src="img/photohero.JPG" 
               alt="Leticia Salinas" 
               className="w-full h-full object-cover"
             />
@@ -296,10 +302,10 @@ export default function RetirementInvitation() {
           <h3 className="text-xl font-bold text-rose-800 mb-4">Código de Vestimenta</h3>
           <div className="bg-amber-50 rounded-lg p-4 border-l-4 border-amber-400">
             <p className="text-amber-800 font-serif italic text-center">
-              "Elegante Casual"
+              "Casual"
             </p>
             <p className="text-amber-700 text-sm mt-2">
-              Sugerimos colores suaves y elegantes para honrar esta ocasión especial.
+              Sugerimos ropa comoda para el baile honrando esta ocasión especial.
             </p>
           </div>
         </div>
