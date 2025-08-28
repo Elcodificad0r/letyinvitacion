@@ -142,8 +142,8 @@ export default function RetirementInvitation() {
 
   const handleGuestsChange = (e) => {
     const value = parseInt(e.target.value);
-    if (value > 5) {
-      showAlert('warning', 'Límite de Invitados', 'Por su atención, solo se pueden invitar máximo a 5 personas');
+    if (value > 1) {
+      showAlert('warning', 'Límite de Invitados', 'Por su atención, solo se pueden invitar máximo 1 persona');
       return;
     }
     setFormData({...formData, guests: e.target.value});
@@ -406,12 +406,12 @@ export default function RetirementInvitation() {
 
             <div>
               <label className="block text-sm font-medium text-rose-700 mb-1">
-                Número de Acompañantes (máximo 5)
+                Número de Acompañantes (máximo 1)
               </label>
               <input
                 type="number"
                 min="0"
-                max="5"
+                max="1"
                 value={formData.guests}
                 onChange={handleGuestsChange}
                 className="w-full px-3 py-2 border border-rose-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400 text-black"
