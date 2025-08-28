@@ -93,7 +93,12 @@ export default function RetirementInvitation() {
     'img/lety-fiesta-6.png',
     'img/lety-fiesta-7.png',
     'img/lety-fiesta-8.png',
-    'img/lety-fiesta-9.png'
+    'img/lety-fiesta-9.png',
+    'img/lety-fiesta-10.png',
+    'img/lety-fiesta-11.png',
+    'img/lety-fiesta-12.png',
+    'img/lety-fiesta-13.png',
+    'img/lety-fiesta-14.png'
   ];
 
   useEffect(() => {
@@ -247,10 +252,10 @@ export default function RetirementInvitation() {
             <GraduationCap className="w-12 h-12 text-rose-600 mx-auto" />
           </div>
           <h2 className="text-2xl font-bold text-rose-800 mb-2">¡Celebremos Juntos!</h2>
-          <h3 className="text-xl font-serif italic text-amber-700 mb-3">Jubilación de Leticia Salinas</h3>
+          <h3 className="text-xl font-serif italic text-amber-700 mb-3"> Fiesta Sorpresa / Jubilación de Leticia Salinas</h3>
           <p className="text-rose-700 mb-4 leading-relaxed text-sm">
             Después de <strong>65 años</strong> dedicados con pasión y entrega a la educación, 
-            queremos honrar su extraordinaria trayectoria con una celebración especial.
+            queremos honrar su extraordinaria trayectoria con una celebración sorpresa especial.
           </p>
           
           {/* Photo Placeholder */}
